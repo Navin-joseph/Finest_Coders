@@ -38,15 +38,16 @@ If the limit is reached without finding a palindrome → the program ends.
 
 CODE :
 
-a = int(input("Enter The Number: "))
-limit = int(input("Enter The Limit: "))
+Enter The Number: 89
+Enter The Limit: 10
+step 1 = 187
+step 2 = 968
+step 3 = 1837
+step 4 = 9218
+step 5 = 17347
+step 6 = 91718
+step 7 = 173437
+step 8 = 907808
+Found Paliandrome:  907808
 
-for i in range(limit):
-    b = str(a)[::-1]
-    c = int(b)
-    a = a+c
-    print(f"step {i+1} = {a}")
-    if str(a) == str(a)[::-1]:
-        print("Found Paliandrome: ", a)
-        break
 
