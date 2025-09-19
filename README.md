@@ -35,3 +35,18 @@ The result is checked for palindrome.
 If a palindrome is found → the program stops and displays it.
 
 If the limit is reached without finding a palindrome → the program ends.
+
+CODE :
+
+a = int(input("Enter The Number: "))
+limit = int(input("Enter The Limit: "))
+
+for i in range(limit):
+    b = str(a)[::-1]
+    c = int(b)
+    a = a+c
+    print(f"step {i+1} = {a}")
+    if str(a) == str(a)[::-1]:
+        print("Found Paliandrome: ", a)
+        break
+
